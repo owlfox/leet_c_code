@@ -34,18 +34,19 @@ void test_add2sum(void) {
     
     struct ListNode* l;
     
+    //5342
     q_insert_head(q1, 5);
     q_insert_head(q1, 3);
     q_insert_head(q1, 4);
     q_insert_head(q1, 2);
-    
+    //5465
     q_insert_head(q2, 5);
     q_insert_head(q2, 4);
     q_insert_head(q2, 6);
     q_insert_head(q2, 5);
     
     l = addTwoNumbers(q1->head, q2->head);
-    TEST_ASSERT_EQUAL_INT(10847, getListInt(l));
+    TEST_ASSERT_EQUAL_INT(10807, getListInt(l));
     
 }
 
